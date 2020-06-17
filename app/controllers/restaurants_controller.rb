@@ -1,7 +1,10 @@
 # frozen_string_literal: true
 
 class RestaurantsController < ApplicationController
-  before_action :set_restaurant, only: %i[show edit update destroy]
+  before_action :set_restaurant, only: %i[show edit update destroy chef]
+
+  # GET / CHEF
+  def chef; end
 
   # GET /top
   def top
